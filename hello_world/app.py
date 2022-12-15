@@ -4,39 +4,20 @@ import json
 
 
 def lambda_handler(event, context):
-    """Sample pure Lambda function
+    number1 = event['Number1']
+    number2 = event['Number2']
+    print(sum(number1,number2))
+    print(product(number1,number2))
+    print(difference(number1,number2))
+    print(quotient(number1,number2))
+    
+def sum(number1,number2):
+   return number1 + number2
+def product():
+    return number1 * number2
+def difference():
+    return abs(number1 - number2)
+def quotient():
+    return number1 / number2
+    
 
-    Parameters
-    ----------
-    event: dict, required
-        API Gateway Lambda Proxy Input Format
-
-        Event doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-input-format
-
-    context: object, required
-        Lambda Context runtime methods and attributes
-
-        Context doc: https://docs.aws.amazon.com/lambda/latest/dg/python-context-object.html
-
-    Returns
-    ------
-    API Gateway Lambda Proxy Output Format: dict
-
-        Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
-    """
-
-    # try:
-    #     ip = requests.get("http://checkip.amazonaws.com/")
-    # except requests.RequestException as e:
-    #     # Send some context about this error to Lambda Logs
-    #     print(e)
-
-    #     raise e
-
-    return {
-        "statusCode": 200,
-        "body": json.dumps({
-            "message": "hello world",
-            # "location": ip.text.replace("\n", "")
-        }),
-    }
