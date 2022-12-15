@@ -1,6 +1,5 @@
 import json
 
-Class app:
 
 
 def lambda_handler(event, context):
