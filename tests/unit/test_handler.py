@@ -12,11 +12,11 @@ def lambda_handler(event, context):
     
 def sum(number1,number2):
    return number1 + number2
-def product():
+def product(number1,number2):
     return number1 * number2
-def difference():
+def difference(number1,number2):
     return abs(number1 - number2)
-def quotient():
+def quotient(number1,number2):
     return number1 / number2
     
 class TestSum(unittest.TestCase):
