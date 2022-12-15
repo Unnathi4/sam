@@ -2,7 +2,7 @@ import json
 
 import unittest
 
-import app
+from hello_world import app
 
 class TestSum(unittest.TestCase):
 
