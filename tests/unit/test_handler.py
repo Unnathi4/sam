@@ -26,7 +26,7 @@ class TestSum(unittest.TestCase):
     def test_product(self):
         self.assertEqual(product(4, 2), 8)
     def test_sub(self):
-        self.assertEqual(difference(4, 1), 3)
+        self.assertEqual(difference(2, 1), 1)
     def test_division(self):
         self.assertEqual(quotient(4,2), 2)
 
