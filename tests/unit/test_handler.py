@@ -19,7 +19,6 @@ def difference(number1,number2):
 def quotient(number1,number2):
     return number1 / number2
 
-#Calci class
     
 class TestSum(unittest.TestCase):
 
